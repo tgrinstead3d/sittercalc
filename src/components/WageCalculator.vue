@@ -2,6 +2,11 @@
 import WageModal from "./WageModal.vue";
 import DateRangePicker from "./DateRangePicker.vue";
 import Earnings from "./Earnings.vue";
+import { useWageStore} from "../stores/WageStore";
+
+const wageStore = useWageStore()
+
+
 </script>
 
 <template>
@@ -24,7 +29,7 @@ import Earnings from "./Earnings.vue";
         <div class="block h-[2px] w-[95%] bg-gray-100 mt-3 mb-4"></div>
         <DateRangePicker />
         <div class="block h-[2px] w-[95%] bg-gray-100 mt-6"></div>
-        <Earnings />
+        <Earnings v-if="wageStore.startTime !== 0"/>
       </div>
     </div>
   </div>
