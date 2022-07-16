@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "daisyui": "^2.19.0",
+    "moment": "^2.29.4",
     "pinia": "^2.0.14",
     "vue": "^3.2.37"
   },

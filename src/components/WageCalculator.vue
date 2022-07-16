@@ -1,7 +1,7 @@
 <script setup>
-import WageModal from "@/components/WageModal.vue";
-import DateRangePicker from "@/components/DateRangePicker.vue";
-import Earnings from "@/components/Earnings.vue";
+import WageModal from "./WageModal.vue";
+import DateRangePicker from "./DateRangePicker.vue";
+import Earnings from "./Earnings.vue";
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import Earnings from "@/components/Earnings.vue";
     class="flex pt-12 items-start justify-center h-screen w-screen bg-stone-200 font-sans"
   >
     <div class="card w-96 bg-base-100 shadow-xl p-6">
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center w-full">
         <label
           htmlFor="wage-modal"
           class="btn modal-button w-full mb-4 text-white"
