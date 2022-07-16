@@ -5,14 +5,14 @@ import { defineStore } from 'pinia'
 
 export const useWageStore = defineStore('main',{
   state: () => ({
-    morning: 20,
-    afternoon: 20,
-    evening: 25,
-    night: 30,
-    money: 20,
+    morning: 0,
+    afternoon: 0,
+    evening: 0,
+    night: 0,
+    money: 0,
     startTime: 0,
     endTime: 0,
-    rate: 20,
+    rate: 0,
     startRate: 0,
     endRate: 0,
     morningRange: [7, 8, 9, 10, 11],
