@@ -48,6 +48,9 @@ export const useWageStore = defineStore('main',{
 
       if (parseFloat(this.endTime) <= parseFloat(this.startTime)) {
         duration = parseFloat(this.endTime) + (24 - parseFloat(this.startTime))
+      } else if (
+          parseFloat(this.endTime) === parseFloat(this.startTime)){
+            duration = 0
       } else {
         duration = parseFloat(this.endTime) - parseFloat(this.startTime)
       }
